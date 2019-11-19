@@ -23,4 +23,6 @@ BASE_URL_SERVER_2 = <url do servidor>
 ### Abra um terceiro terminal e vá para a raíz do projeto e digite o seguinte comando:
 ```yarn dev``` ou ```npm run dev```
 ### Pare um servidor para testar
+### Caso se interesse pela api da TotalVoice, segue documentação completa:
+https://totalvoice.github.io/totalvoice-docs/#introducao
 
