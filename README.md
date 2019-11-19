@@ -5,9 +5,6 @@
 ### Crie uma conta na <strong><a href="https://api2.totalvoice.com.br/painel/signup.php">Total Voice</a></strong>
 ### Crie um arquivo .env na raíz do projeto e preencha com os seguintes dados:
 ```javascript
-APP_URL = http://localhost:3333
-NODE_ENV = development
-
 TOTALVOICE_KEY = <access_token criado para seu usuário (consegue ser visualizado no painel da Total Voice)>
 
 DEVELOPER_NAME = <nome do dev>
