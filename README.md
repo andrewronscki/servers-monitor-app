@@ -1,7 +1,7 @@
 ## Projeto de monitoramento de servidores
 
-### clone o projeto git:
-```clone <url>```
+### clone o projeto:
+```git clone <url>```
 ### Instale as dependências:
 ```yarn``` ou ```npm install```
 ### Crie uma conta na <b><a href="https://api2.totalvoice.com.br/painel/signup.php">Total Voice</a></b>
