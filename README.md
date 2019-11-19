@@ -1,37 +1,25 @@
-## How to start node project with <a href="https://www.npmjs.com/package/@rocketseat/omni-cli">@omni-cli</a>
+## Projeto de monitoramento de servidores
 
-### install <a href="https://nodejs.org/en/">Node.js</a>
-### omni init {package_name} --only=server
-### <strong><a href="https://yarnpkg.com/lang/en/">yarn</a><strong> dev or npm run dev
-### docker run --name {container_name} -p 27017:27017 -d -t mongo
-### create controller
-### change route
-### yarn add mongoose
-### integration with api
+### clone o projeto: <strong>git clone <url></strong>
+### Instale as dependências: <strong>yarn</strong> ou <strong>npm install</strong>
+### Crie uma conta na <strong><a href="https://api2.totalvoice.com.br/painel/signup.php">Total Voice</a></strong>
+### Crie um arquivo .env na raíz do projeto e preencha com os seguintes dados:
 ```javascript
-mongoose.connect('mongodb://localhost:27017', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-```
-### create model
-```javascript
-import { Schema, model } from 'mongoose';
+APP_URL = http://localhost:3333
+NODE_ENV = development
 
-const LanguageSchema = new Schema({
-  name: {
-    type: String,
-    required: true,
-  },
-  author: {
-    type: String,
-    required: true,
-  },
-});
+TOTALVOICE_KEY = <access_token criado para seu usuário (consegue ser visualizado no painel da Total Voice)>
 
-export default model('Languages', LanguageSchema);
+DEVELOPER_NAME = <nome do dev>
+DEVELOPER_PHONE = <telefone do dev>
+
+SERVER_NAME_1 = <nome do servidor>
+BASE_URL_SERVER_1 = <url do servidor>
+
+SERVER_NAME_2 = <nome do servidor>
+BASE_URL_SERVER_2 = <url do servidor>
 ```
-### integration model in controller 
-### create function index and store
-### create call tests in Insomnia or Postman
+### Abra dois terminais e inicie os servidores 1 e 2 indo até a pasta deles e digitando <strong>node server</strong>
+### Abra um terceiro terminal e vá para a raíz do projeto e digite o seguinte comando <strong>yarn dev</strong> ou <strong>npm run dev</strong>
+### Pare um servidor para testar
 
